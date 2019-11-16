@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<views xmlns="http://schemas.haulmont.com/cuba/view.xsd">
+
+    <view entity="ceudv_Order" name="order-view" extends="_local">
+        <property name="customer" view="_minimal"/>
+    </view>
+    <view entity="ceudv_Customer" name="customer-view" extends="_local">
+        <property name="orders" view="_base"/>
+        <property name="accountManager" view="_base"/>
+        <property name="country" view="_base"/>
+    </view>
+    <view entity="ceudv_AccountManagerDefaultOrderPriority" name="accountManagerDefaultOrderPriority-view" extends="_local">
+        <property name="accountManager" view="_base" />
+    </view>
+</views>
