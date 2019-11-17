@@ -14,37 +14,44 @@
     <dialogMode height="600"
                 width="800"/>
     <layout expand="editActions" spacing="true">
-        <form id="form" dataContainer="customerDc">
-            <column width="250px">
-                <textField id="nameField" property="name"/>
-                <lookupField id="typeField" property="type"/>
-                <textField id="firstNameField" property="firstName"/>
-                <dateField id="birthdayField" property="birthday"/>
-                <textField id="streetField" property="street"/>
-                <textField id="postalCodeField" property="postalCode"/>
-                <textField id="cityField" property="city"/>
-                <pickerField id="countryField" property="country"/>
-                <pickerField id="accountManagerField" property="accountManager"/>
-            </column>
-        </form>
-        <groupBox id="ordersBox" caption="msg://com.company.ceudv.entity/Customer.orders">
-            <table id="ordersTable" dataContainer="ordersDc" width="100%" height="200px">
-                <actions>
-                    <action id="create" type="create"/>
-                    <action id="edit" type="edit"/>
-                    <action id="remove" type="remove"/>
-                </actions>
-                <columns>
-                    <column id="orderDate"/>
-                    <column id="orderPriority"/>
-                </columns>
-                <buttonsPanel>
-                    <button action="ordersTable.create"/>
-                    <button action="ordersTable.edit"/>
-                    <button action="ordersTable.remove"/>
-                </buttonsPanel>
-            </table>
-        </groupBox>
+        <tabSheet>
+            <tab id="details" caption="msg://details" spacing="true" margin="true">
+                <form id="form" dataContainer="customerDc">
+                <column width="250px">
+                    <textField id="nameField" property="name"/>
+                    <textField id="streetField" property="street"/>
+                    <textField id="postalCodeField" property="postalCode"/>
+                    <dateField id="birthdayField" property="birthday"/>
+                </column>
+                <column width="250px">
+                    <textField id="firstNameField" property="firstName"/>
+                    <lookupField id="typeField" property="type"/>
+                    <textField id="cityField" property="city"/>
+                    <pickerField id="countryField" property="country"/>
+                    <pickerField id="accountManagerField" property="accountManager"/>
+                </column>
+                </form>
+            </tab>
+            <tab id="ordersTab" caption="msg://com.company.ceudv.entity/Customer.orders" spacing="true" margin="true">
+                <table id="ordersTable" dataContainer="ordersDc" width="100%" height="200px">
+                    <actions>
+                        <action id="create" type="create"/>
+                        <action id="edit" type="edit"/>
+                        <action id="remove" type="remove"/>
+                    </actions>
+                    <columns>
+                        <column id="orderDate"/>
+                        <column id="orderPriority"/>
+                    </columns>
+                    <buttonsPanel>
+                        <button action="ordersTable.create"/>
+                        <button action="ordersTable.edit"/>
+                        <button action="ordersTable.remove"/>
+                    </buttonsPanel>
+                </table>
+            </tab>
+        </tabSheet>
+
         <hbox id="editActions" spacing="true">
             <button action="windowCommitAndClose"/>
             <button action="windowClose"/>
