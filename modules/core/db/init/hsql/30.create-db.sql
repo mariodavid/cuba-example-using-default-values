@@ -42,22 +42,22 @@ insert into CEUDV_ACCOUNT_MANAGER_DEFAULT_ORDER_PRIORITY
 values ('71ec4b48-2d19-2a41-e34a-d147ea8c79cf', 1, '2019-11-16 18:01:05', 'admin', '2019-11-16 18:01:05', null, null, null, '7e84c345-2fce-bccc-59a5-1f75f7e388d9', 'HIGHEST');
 
 
-insert into DDCDV_ENTITY_ATTRIBUTE_DEFAULT_VALUE
+insert into DDCDV_ENTITY_ATTRIBUTE_DV
 (ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ENTITY, ENTITY_ATTRIBUTE, VALUE_, TYPE_)
 values ('29fc89f3-ac7d-75f5-01e5-184a37908d09', 1, '2019-11-16 16:28:41', 'admin', '2019-11-16 16:28:41', null, null, null, 'ceudv_Customer', 'ceudv_Customer.type', 'customerTypeFavorite', 'DYNAMIC_VALUE');
-insert into DDCDV_ENTITY_ATTRIBUTE_DEFAULT_VALUE
+insert into DDCDV_ENTITY_ATTRIBUTE_DV
 (ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ENTITY, ENTITY_ATTRIBUTE, VALUE_, TYPE_)
 values ('55a6f6be-8758-40fc-4ad3-5b0a97b4ec65', 1, '2019-11-16 18:10:42', 'bart', '2019-11-16 18:10:42', null, null, null, 'ceudv_Customer', 'ceudv_Customer.country', 'ceudv_Country-5f7d8816-f028-1372-c85a-11b0e6cfbb84', 'STATIC_VALUE');
-insert into DDCDV_ENTITY_ATTRIBUTE_DEFAULT_VALUE
+insert into DDCDV_ENTITY_ATTRIBUTE_DV
 (ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ENTITY, ENTITY_ATTRIBUTE, VALUE_, TYPE_)
 values ('78753c9a-f822-3342-f5dd-2d927f33034c', 1, '2019-11-16 16:35:00', 'admin', '2019-11-16 16:35:00', null, null, null, 'ceudv_Customerv', 'ceudv_Customer.accountManager', 'ddcdv_CurrentOrSubstitutedUserDynamicValueProvider', 'DYNAMIC_VALUE');
-insert into DDCDV_ENTITY_ATTRIBUTE_DEFAULT_VALUE
+insert into DDCDV_ENTITY_ATTRIBUTE_DV
 (ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ENTITY, ENTITY_ATTRIBUTE, VALUE_, TYPE_)
 values ('b3965811-6cc1-12f8-b92f-bf3375d9ac30', 1, '2019-11-16 18:10:42', 'bart', '2019-11-16 18:10:42', null, null, null, 'ceudv_Customer', 'ceudv_Customer.city', ':session$defaultCity', 'SESSION_ATTRIBUTE');
-insert into DDCDV_ENTITY_ATTRIBUTE_DEFAULT_VALUE
+insert into DDCDV_ENTITY_ATTRIBUTE_DV
 (ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ENTITY, ENTITY_ATTRIBUTE, VALUE_, TYPE_)
 values ('be5d9660-0a71-a2e2-719f-e56bf979242e', 1, '2019-11-16 16:29:48', 'admin', '2019-11-16 16:29:48', null, null, null, 'ceudv_Order', 'ceudv_Order.orderDate', 'ddcdv_TodayLocalDateProvider', 'DYNAMIC_VALUE');
-insert into DDCDV_ENTITY_ATTRIBUTE_DEFAULT_VALUE
+insert into DDCDV_ENTITY_ATTRIBUTE_DV
 (ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, ENTITY, ENTITY_ATTRIBUTE, VALUE_, TYPE_)
 values ('8e76c7aa-b3de-f52d-ecf2-c80e04a601e3', 3, '2019-11-16 17:52:33', 'admin', '2019-11-16 17:59:37', 'admin', null, null, 'ceudv_Order', 'ceudv_Order.orderPriority', 'import com.company.ceudv.entity.*
 
