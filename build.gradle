@@ -3,11 +3,8 @@ buildscript {
     ext.cubaVersion = '7.1.2'
     repositories {
 
+
         mavenLocal()
-        maven {
-            url 'https://dl.bintray.com/mariodavid/cuba-components'
-            
-        }
         maven {
             url 'https://dl.bintray.com/cuba-platform/main'
 
@@ -44,7 +41,7 @@ cuba {
 
 dependencies {
     appComponent("com.haulmont.cuba:cuba-global:$cubaVersion")
-    appComponent('de.diedavids.cuba.defaultvalues:defaultvalues-global:0.1.1')
+    appComponent('de.diedavids.cuba.defaultvalues:defaultvalues-global:0.1.3')
 }
 
 def hsql = 'org.hsqldb:hsqldb:2.4.1'
